@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d32f2f;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.loginControl">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="302.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXTextField fx:id="Username" focusColor="#424242" layoutX="150.0" layoutY="75.0" prefHeight="30.0" prefWidth="300.0" promptText="Username" unFocusColor="#ff6659" />
+            <JFXPasswordField fx:id="Password" focusColor="#424242" layoutX="150.0" layoutY="130.0" prefHeight="30.0" prefWidth="300.0" promptText="Password" unFocusColor="#ff6659" />
+            <Label alignment="CENTER" layoutX="190.0" layoutY="30.0" prefHeight="20.0" prefWidth="220.0" text="Login" textFill="#6f6767">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="190.0" layoutY="200.0" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #424242;" text="Login" textFill="#f5f2f2" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="90.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="90.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/password.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="28.0" prefHeight="29.0" prefWidth="155.0" text="TASK" textFill="#fcfcfc">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Signup" layoutX="433.0" layoutY="35.0" prefHeight="27.0" prefWidth="105.0" style="-fx-background-color: #9a0007;" text="Sign Up" textFill="#eee7e7" />
+   </children>
+</AnchorPane>

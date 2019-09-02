@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="288.0" style="-fx-background-color: b3ffb3;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="iconImageView" fitHeight="45.0" fitWidth="45.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/normal.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="task" layoutX="75.0" layoutY="25.0" prefHeight="25.0" prefWidth="200.0" text="hello" textFill="#001a00" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="dateLabel" alignment="CENTER_RIGHT" layoutY="56.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="285.0" style="-fx-background-color: #66ff66;" textFill="#001a00">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="description" layoutX="75.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="80.0" text="hello" textFill="#127112">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="deleteButton" fitHeight="25.0" fitWidth="25.0" layoutX="250.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icon_delete.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

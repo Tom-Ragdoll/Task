@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.addItemControl">
+   <children>
+      <JFXTextField fx:id="taskField" focusColor="#b51d27" layoutX="150.0" layoutY="130.0" prefHeight="50.0" prefWidth="300.0" promptText="Task" unFocusColor="#741e7c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="saveTaskButton" layoutX="225.0" layoutY="280.0" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #d32f2f;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Label alignment="CENTER" layoutX="88.0" layoutY="28.0" prefHeight="29.0" prefWidth="155.0" text="TASK" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <CheckBox fx:id="normalCheck" layoutX="160.0" layoutY="225.0" mnemonicParsing="false" selected="true" text="Normal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="importantCheck" layoutX="330.0" layoutY="225.0" mnemonicParsing="false" text="Important">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <JFXButton fx:id="logout" layoutX="443.0" layoutY="35.0" prefHeight="27.0" prefWidth="105.0" style="-fx-background-color: #9a0007;" text="Logout" textFill="#eee7e7" />
+   </children>
+</AnchorPane>
